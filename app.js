@@ -1,3 +1,4 @@
+var crypto = require('crypto');
 const generate = (str) =>
   new Uint8Array(
     [...unescape(encodeURIComponent(str))].map((c) => c.charCodeAt(0))
